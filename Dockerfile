@@ -15,4 +15,4 @@ COPY . .
 
 RUN pip install -e .
 
-ENTRYPOINT [ "gunicorn", "-c", "/app/gunicorn.py", "webserver.app:app" ]
+ENTRYPOINT [ "gunicorn", "-c", "/app/gunicorn.py", "webserver.app:create_app" ]
